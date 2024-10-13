@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soulstrength Arena Gym Website</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../CSS/week.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Soulstrength Arena Gym</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="../HTML/home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../HTML/about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="../HTML/services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="schedule.html">Class Schedule</a></li>
+                <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+                <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+                <li class="nav-item"><a class="nav-link" href="fees.html">Fee Structure</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero text-white text-center py-5">
+    <div class="container">
+        <h1 class="display-4">Welcome to Soulstrength Arena Gym</h1>
+        <p class="lead">Your journey to a healthier, stronger you starts here.</p>
+        <a href="#" class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#signupModal">Join Us Now</a>
+    </div>
+</header>
+
+<!-- Sign-Up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signupModalLabel">Sign Up for Soulstrength Arena Gym</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="mb-3">
+                        <label for="membershipType" class="form-label">Membership Type</label>
+                        <select class="form-select" id="membershipType">
+                            <option selected>Select Membership</option>
+                            <option value="1">Monthly</option>
+                            <option value="2">Quarterly</option>
+                            <option value="3">Yearly</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comments" class="form-label">Additional Comments</label>
+                        <textarea class="form-control" id="comments" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Rest of the Page Content -->
+<section class="container my-5">
+    <!-- Add your sections like Services, Testimonials, Featured Classes, etc. -->
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2024 Soulstrength Arena Gym. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+/* Full-screen background image for the hero section */
+.services-hero {
+    position: relative;
+    height: 100vh; /* Full screen height */
+    background-image: url('../gym/pic.jpg'); /* Set your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax scrolling effect */
+    display: flex;
+    align-items: center; /* Vertically centers the text */
+    justify-content: center; /* Horizontally centers the text */
+}
+
+/* Dark overlay for better text readability */
+.services-hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    z-index: 1;
+}
+
+/* Styling the text inside the hero section */
+.services-hero .container {
+    position: relative;
+    z-index: 2;
+    text-align: center; /* Centers the text horizontally */
+}
+
+.services-hero h1, .services-hero p {
+    color: white;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+
+
+
